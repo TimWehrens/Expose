@@ -7,7 +7,7 @@
 
 Zur Beantwortung der Forschungsfragen wird eine systematische Literaturrecherche durchgeführt. Dieses Vorgehen eignet sich besonders, um den bestehenden Wissensstand zu Change-Management-Faktoren bei ERP-Implementierungen im Mittelstand zu erfassen, zu strukturieren und kritisch zu synthetisieren. Die systematische Literaturrecherche folgt den etablierten Rahmenwerken von Webster und Watson\footcite[Vgl.][S.~xiii--xxiii]{webster2002}, vom Brocke et al.\footcite[Vgl.][S.~218--220]{vombrocke2015} sowie Okoli\footcite[Vgl.][S.~882]{okoli2015}, die einen nachvollziehbaren und reproduzierbaren Forschungsprozess sicherstellen.
 
-Die Literatursuche erfolgt in neun wissenschaftlichen Datenbanken, die für die Wirtschaftsinformatik und angrenzende Disziplinen relevant sind: SpringerLink, ScienceDirect, IEEE Xplore, die ACM Digital Library, Wiley Interscience, Web of Knowledge, EBSCOhost, die AIS Electronic Library (AISeL) sowie das für deutschsprachige Wirtschaftsliteratur einschlägige Portal WISO-net. Der Suchalgorithmus kombiniert Boolesche Operatoren, um die zentralen Konstrukte der Arbeit präzise abzudecken. Die Suchstring-Formulierung lautet:
+Die Literatursuche erfolgt in neun wissenschaftlichen Datenbanken, die für die Wirtschaftsinformatik und angrenzende Disziplinen relevant sind: SpringerLink, ScienceDirect, IEEE Xplore, die ACM Digital Library, Wiley Online Library, Web of Science, EBSCOhost, die AIS Electronic Library (AISeL) sowie das für deutschsprachige Wirtschaftsliteratur einschlägige Portal WISO-net. Der Suchalgorithmus kombiniert Boolesche Operatoren, um die zentralen Konstrukte der Arbeit präzise abzudecken. Die Suchstring-Formulierung lautet:
 
 \begin{quote}
 \verb|("ERP implementation" OR "Enterprise Resource Planning")|\\
@@ -27,6 +27,7 @@ Für die deutschsprachige Suche wird eine äquivalente Variante verwendet:
 
 Tabelle~\ref{tab:suchalgorithmus} fasst die geplante systematische Suche mit den voraussichtlichen Trefferzahlen und der Qualitätsbewertung der identifizierten Quellen zusammen. Die tatsächlichen Trefferzahlen werden im Rahmen der Bachelorarbeit ermittelt und im PRISMA-Flowchart dokumentiert.
 
+{\shorthandoff{"}
 \begin{table}[H]
 \centering
 \small
@@ -34,28 +35,38 @@ Tabelle~\ref{tab:suchalgorithmus} fasst die geplante systematische Suche mit den
 \toprule
 \textbf{Datenbank} & \textbf{Suchalgorithmus (gekürzt)} \\
 \midrule
-SpringerLink & (ERP OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND (SME OR Mittelstand) \\
+SpringerLink &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND (SME OR Mittelstand)} \\[4pt]
 \midrule
-ScienceDirect & (ERP OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND (SME OR Mittelstand) \\
+ScienceDirect &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND (SME OR Mittelstand)} \\[4pt]
 \midrule
-IEEE Xplore & (ERP OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND SME \\
+IEEE Xplore &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND SME} \\[4pt]
 \midrule
-ACM Digital Library & (ERP OR "Enterprise Resource Planning") AND "change management" AND ("success factors" OR CSF) AND SME \\
+ACM Digital Library &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors" OR CSF) AND SME} \\[4pt]
 \midrule
-Wiley Interscience & (ERP OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND SME \\
+Wiley Online Library &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND SME} \\[4pt]
 \midrule
-Web of Knowledge & (ERP OR "Enterprise Resource Planning") AND "change management" AND ("critical success factors") AND (SME OR "small medium") \\
+Web of Science &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("critical success factors") AND (SME OR "small medium")} \\[4pt]
 \midrule
-EBSCOhost & (ERP OR "Enterprise Resource Planning") AND ("change management" OR "Veränderungsmanagement") AND ("Erfolgsfaktoren" OR "critical success factors") AND (Mittelstand OR SME OR KMU) \\
+EBSCOhost &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND ("change management" OR "Veränderungsmanagement") AND ("Erfolgsfaktoren" OR "critical success factors") AND (Mittelstand OR SME OR KMU)} \\[4pt]
 \midrule
-AISeL & (ERP OR "Enterprise Resource Planning") AND "change management" AND "success factors" \\
+AISeL &
+\texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND "success factors"} \\[4pt]
 \midrule
-WISO-net & (ERP-Einführung OR ERP-Implementierung) AND (Change Management OR Veränderungsmanagement) AND Erfolgsfaktoren AND (Mittelstand OR KMU) \\
+WISO-net &
+\texttt{(ERP-Einführung OR ERP-Implementierung) AND (Change Management OR Veränderungsmanagement) AND Erfolgsfaktoren AND (Mittelstand OR KMU)} \\
 \bottomrule
 \end{tabularx}
 \caption{Geplante systematische Literaturrecherche -- Datenbanken und Suchalgorithmen}
 \label{tab:suchalgorithmus}
 \end{table}
+}
 
 Die Qualitätssicherung der identifizierten Literatur erfolgt über mehrere Stufen. Berücksichtigt werden ausschlie\ss{}lich peer-reviewte Beiträge aus wissenschaftlichen Zeitschriften und Konferenzbänden sowie etablierte Fachbücher. Die Zeitschriftenqualität wird anhand des H-Index und der Einstufung im VHB-JOURQUAL-Ranking bewertet.
 
