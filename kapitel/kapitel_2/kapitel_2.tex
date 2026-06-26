@@ -27,68 +27,68 @@ Für die deutschsprachige Suche wird eine äquivalente Variante verwendet:
 
 Tabelle~\ref{tab:suchalgorithmus} fasst die geplante systematische Suche mit den voraussichtlichen Trefferzahlen, den zu erwartenden Kernquellen und der Qualitätsbewertung der identifizierten Journale zusammen. Die tatsächlichen Trefferzahlen werden im Rahmen der Bachelorarbeit ermittelt und im PRISMA-Flowchart dokumentiert.
 
-{
+{\shorthandoff{"}
 \begin{table}[H]
 \centering
 \footnotesize
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.25}
-\begin{tabularx}{\textwidth}{>{\raggedright}p{1.3cm}>{\raggedright\arraybackslash}X>{\centering}p{0.8cm}>{\raggedright}p{1.6cm}>{\centering}p{0.7cm}>{\centering}p{0.7cm}}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\raggedright}p{1.2cm}>{\raggedright\arraybackslash}X>{\centering}p{0.7cm}>{\raggedright}p{1.6cm}>{\centering}p{0.6cm}>{\centering}p{0.6cm}}
 \toprule
-\textbf{Suchort} & \textbf{Suchalgorithmus} & \textbf{Treffer} & \textbf{Auswahl} & \textbf{H-Index} & \textbf{Q-Rank.} \\
+\textbf{Suchort} & \textbf{Suchalgorithmus} & \textbf{Treffer} & \textbf{Auswahl} & \textbf{H-Idx} & \textbf{Q-Rnk} \\
 \midrule
 SpringerLink &
-(ERP OR Enterprise Resource Planning) AND change management AND (success factors) AND (SME OR Mittelstand) &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{"change management" AND} \newline \texttt{("success factors") AND} \newline \texttt{(SME OR Mittelstand)} &
 $\sim$120 &
-Butarbutar et al. (2023), Cogent Bus. \& Mgmt. &
+Butarbutar et al. (2023) &
 68 & Q2 \\
 \midrule
 ScienceDirect &
-(ERP OR Enterprise Resource Planning) AND change management AND (success factors) AND (SME OR Mittelstand) &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{"change management" AND} \newline \texttt{("success factors") AND} \newline \texttt{(SME OR Mittelstand)} &
 $\sim$45 &
-Ruivo, Oliveira \& Neto (2015), Int. J. Account. Inf. Syst. &
+Ruivo et al. (2015) &
 70 & Q1 \\
 \midrule
 IEEE Xplore &
-(ERP OR Enterprise Resource Planning) AND change management AND (success factors) AND SME &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{"change management" AND} \newline \texttt{("success factors") AND SME} &
 $\sim$28 &
-Kiran \& Reddy (2019), J. Proj. Manage. &
+Kiran \& Reddy (2019) &
 15 & Q2 \\
 \midrule
 ACM DL &
-(ERP OR Enterprise Resource Planning) AND change management AND (success factors OR CSF) AND SME &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{"change management" AND} \newline \texttt{("success factors" OR CSF)} \newline \texttt{AND SME} &
 $\sim$15 &
-Leyh et al. (2024), Proc. FedCSIS &
+Leyh et al. (2024) &
 -- & -- \\
 \midrule
 Wiley OL &
-(ERP OR Enterprise Resource Planning) AND change management AND (success factors) AND SME &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{"change management" AND} \newline \texttt{("success factors") AND SME} &
 $\sim$35 &
-Subbarao \& Khan (2022), J. Syst. Manag. Sci. &
+Subbarao \& Khan (2022) &
 16 & -- \\
 \midrule
 Web of Science &
-(ERP OR Enterprise Resource Planning) AND change management AND (critical success factors) AND (SME OR small medium) &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{"change management" AND} \newline \texttt{("critical success factors")} \newline \texttt{AND (SME OR} \newline \texttt{"small medium")} &
 $\sim$65 &
-Butarbutar et al. (2023) / Leyh et al. (2024) &
+Butarbutar \& Leyh &
 68/-- & Q2/-- \\
 \midrule
 EBSCOhost &
-(ERP OR Enterprise Resource Planning) AND (change management OR Ver"anderungsmanagement) AND (Erfolgsfaktoren OR critical success factors) AND (Mittelstand OR SME OR KMU) &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{("change management" OR} \newline \texttt{"Ver\"anderungs-"} \newline \texttt{management") AND} \newline \texttt{("Erfolgsfaktoren" OR} \newline \texttt{"critical success factors")} \newline \texttt{AND (Mittelstand OR} \newline \texttt{SME OR KMU)} &
 $\sim$50 &
-Hubbart (2023), J. Organ. Change Manag. &
+Hubbart (2023) &
 55 & Q2 \\
 \midrule
 AISeL &
-(ERP OR Enterprise Resource Planning) AND change management AND success factors &
+\texttt{("ERP" OR "Enterprise} \newline \texttt{Resource Planning") AND} \newline \texttt{"change management"} \newline \texttt{AND "success factors"} &
 $\sim$22 &
-Aladwani (2001), J. Glob. Inf. Manag. &
+Aladwani (2001) &
 35 & Q2 \\
 \midrule
 WISO-net &
-(ERP-Einf"uhrung OR ERP-Implementierung) AND (Change Management OR Ver"anderungsmanagement) AND Erfolgsfaktoren AND (Mittelstand OR KMU) &
+\texttt{(ERP-Einf\"uhrung OR} \newline \texttt{ERP-Implementierung) AND} \newline \texttt{(Change Management OR} \newline \texttt{Ver\"anderungsmanagement)} \newline \texttt{AND Erfolgsfaktoren AND} \newline \texttt{(Mittelstand OR KMU)} &
 $\sim$30 &
-Idilbi (2022), FOM Schriftenreihe &
+Idilbi (2022) &
 -- & -- \\
 \bottomrule
 \end{tabularx}
