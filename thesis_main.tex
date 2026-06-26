@@ -90,7 +90,9 @@
 \usepackage{multirow}
 \usepackage{rotating} % vertikal schreiben
 \usepackage{mdwlist}
-\usepackage{tabularx}% für Breitenangabe
+% ltablex kombiniert tabularx mit longtable (Seitenumbruch bei X-Spalte)
+\usepackage{ltablex}
+\keepXColumns % verhindert, dass ltablex aus X stillschweigend feste Spalten macht
 
 %-----------------------------------
 % sauber formatierter Quelltext

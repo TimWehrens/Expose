@@ -25,27 +25,43 @@ Für die deutschsprachige Suche wird eine äquivalente Variante verwendet:
 \verb|AND ("Mittelstand" OR "KMU")|
 \end{quote}
 
-Tabelle~\ref{tab:lit-recherche} fasst die geplante systematische Suche mit den voraussichtlichen Trefferzahlen, den zu erwartenden Kernquellen und der Qualitätsbewertung der identifizierten Journale zusammen. Die tatsächlichen Trefferzahlen werden im Rahmen der Bachelorarbeit ermittelt und im PRISMA-Flowchart dokumentiert.
+Tabelle~\ref{tab:lit-recherche} fasst die vorl\"aufigen Treffer der systematischen Suche mit Trefferzahlen, Kernquellen und Qualit\"atsbewertung der Journale zusammen. Die tatsächlichen Trefferzahlen werden im Rahmen der Bachelorarbeit ermittelt und im PRISMA-Flowchart dokumentiert.
 
-\begin{table}[htbp]
- \centering
- \footnotesize
- \shorthandoff{"} % <- schaltet die babel-Sonderbedeutung von " ab
- \renewcommand{\arraystretch}{1.25}
- \setlength{\tabcolsep}{4pt}
- \caption{Vorläufige Treffer der systematischen Literaturrecherche}
- \label{tab:lit-recherche}
- \begin{tabularx}{\textwidth}{%
+\shorthandoff{"}
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{%
  >{\raggedright\arraybackslash}p{1.9cm} % Suchort
  >{\raggedright\arraybackslash}X % Suchalgorithmus (flexibel)
  >{\centering\arraybackslash}p{0.9cm} % Treffer
  >{\raggedright\arraybackslash}p{2.1cm} % Auswahl
- >{\centering\arraybackslash}p{0.8cm} % H-Idx
+ >{\centering\arraybackslash}p{0.9cm} % H-Idx
  >{\centering\arraybackslash}p{0.9cm} % Q-Rnk
- }
+}
+ \caption{Vorl\"aufige Treffer der systematischen Literaturrecherche}
+ \label{tab:lit-recherche} \\
+ % --- Kopf auf der ERSTEN Seite ---
  \toprule
- \textbf{Suchort} & \textbf{Suchalgorithmus} & \textbf{Treffer} & \textbf{Auswahl} & \textbf{H-Idx (Journal)} & \textbf{Q-Rnk (Journal)} \\
+ \textbf{Suchort} & \textbf{Suchalgorithmus} & \textbf{Treffer} & \textbf{Auswahl} &
+ \textbf{\shortstack[c]{H-Idx\\(Jour-\\nal)}} & \textbf{\shortstack[c]{Q-Rnk\\(Jour-\\nal)}} \\
  \midrule
+ \endfirsthead
+ % --- Kopf auf JEDER FOLGESEITE ---
+ \multicolumn{6}{l}{\footnotesize\itshape Tabelle \thetable\ -- Fortsetzung von vorheriger Seite}\\
+ \toprule
+ \textbf{Suchort} & \textbf{Suchalgorithmus} & \textbf{Treffer} & \textbf{Auswahl} &
+ \textbf{\shortstack[c]{H-Idx\\(Jour-\\nal)}} & \textbf{\shortstack[c]{Q-Rnk\\(Jour-\\nal)}} \\
+ \midrule
+ \endhead
+ % --- Fu\ss{} auf JEDER Seite au\ss{}er der letzten ---
+ \midrule
+ \multicolumn{6}{r}{\footnotesize\itshape Fortsetzung auf n\"achster Seite}\\
+ \endfoot
+ % --- Fu\ss{} auf der LETZTEN Seite ---
+ \bottomrule
+ \endlastfoot
  SpringerLink &
  \texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("critical success factors" OR "success factors") AND (SME OR Mittelstand)} &
  $\sim$120 & Butarbutar et al.\ (2023) & 68 & Q2 \\
@@ -71,7 +87,7 @@ Tabelle~\ref{tab:lit-recherche} fasst die geplante systematische Suche mit den v
  $\sim$65 & Butarbutar \& Leyh & 68/-- & Q2/-- \\
  \addlinespace
  EBSCOhost &
- \texttt{("ERP" OR "Enterprise Resource Planning") AND ("change management" OR "Veränderungsmanagement") AND ("Erfolgsfaktoren" OR "critical success factors") AND (Mittelstand OR SME OR KMU)} &
+ \texttt{("ERP" OR "Enterprise Resource Planning") AND ("change management" OR "Ver\"anderungsmanagement") AND ("Erfolgsfaktoren" OR "critical success factors") AND (Mittelstand OR SME OR KMU)} &
  $\sim$50 & Hubbart (2023) & 55 & Q2 \\
  \addlinespace
  AISeL &
@@ -79,12 +95,10 @@ Tabelle~\ref{tab:lit-recherche} fasst die geplante systematische Suche mit den v
  $\sim$22 & Aladwani (2001) & 35 & Q2 \\
  \addlinespace
  WISO-net &
- \texttt{(ERP-Einführung OR ERP-Implementierung) AND (Change Management OR Veränderungsmanagement) AND Erfolgsfaktoren AND (Mittelstand OR KMU)} &
+ \texttt{(ERP-Einf\"uhrung OR ERP-Implementierung) AND (Change Management OR Ver\"anderungsmanagement) AND Erfolgsfaktoren AND (Mittelstand OR KMU)} &
  $\sim$30 & Idilbi (2022) & -- & -- \\
- \bottomrule
- \end{tabularx}
- \shorthandon{"} % <- Sonderbedeutung danach wieder an
-\end{table}
+\end{longtable}
+\shorthandon{"}
 
 Die Qualitätssicherung der identifizierten Literatur erfolgt über mehrere Stufen. Berücksichtigt werden ausschlie\ss{}lich peer-reviewte Beiträge aus wissenschaftlichen Zeitschriften und Konferenzbänden sowie etablierte Fachbücher. Die Zeitschriftenqualität wird anhand des H-Index und der Einstufung im VHB-JOURQUAL-Ranking bewertet.
 
