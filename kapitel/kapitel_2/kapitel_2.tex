@@ -30,28 +30,29 @@ Tabelle~\ref{tab:lit-recherche} fasst die geplante systematische Suche mit den v
 \begin{table}[htbp]
  \centering
  \footnotesize
+ \shorthandoff{"} % <- schaltet die babel-Sonderbedeutung von " ab
  \renewcommand{\arraystretch}{1.25}
  \setlength{\tabcolsep}{4pt}
  \caption{Geplante systematische Literaturrecherche}
  \label{tab:lit-recherche}
  \begin{tabularx}{\textwidth}{%
- >{\raggedright\arraybackslash}p{1.7cm}
- >{\raggedright\arraybackslash}X
- >{\centering\arraybackslash}p{0.9cm}
- >{\raggedright\arraybackslash}p{2.1cm}
- >{\centering\arraybackslash}p{0.8cm}
- >{\centering\arraybackslash}p{0.8cm}
+ >{\raggedright\arraybackslash}p{1.9cm} % Suchort
+ >{\raggedright\arraybackslash}X % Suchalgorithmus (flexibel)
+ >{\centering\arraybackslash}p{0.9cm} % Treffer
+ >{\raggedright\arraybackslash}p{2.1cm} % Auswahl
+ >{\centering\arraybackslash}p{0.8cm} % H-Idx
+ >{\centering\arraybackslash}p{0.9cm} % Q-Rnk
  }
  \toprule
  \textbf{Suchort} & \textbf{Suchalgorithmus} & \textbf{Treffer} & \textbf{Auswahl} & \textbf{H-Idx} & \textbf{Q-Rnk} \\
  \midrule
  SpringerLink &
  \texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND (SME OR Mittelstand)} &
- $\sim$120 & Butarbutar et al. (2023) & 68 & Q2 \\
+ $\sim$120 & Butarbutar et al.\ (2023) & 68 & Q2 \\
  \addlinespace
  ScienceDirect &
  \texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND (SME OR Mittelstand)} &
- $\sim$45 & Ruivo et al. (2015) & 70 & Q1 \\
+ $\sim$45 & Ruivo et al.\ (2015) & 70 & Q1 \\
  \addlinespace
  IEEE Xplore &
  \texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND SME} &
@@ -59,7 +60,7 @@ Tabelle~\ref{tab:lit-recherche} fasst die geplante systematische Suche mit den v
  \addlinespace
  ACM DL &
  \texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND (SME OR Mittelstand)} &
- $\sim$15 & Leyh et al. (2024) & -- & Q2 \\
+ $\sim$15 & Leyh et al.\ (2024) & -- & Q2 \\
  \addlinespace
  Wiley OL &
  \texttt{("ERP" OR "Enterprise Resource Planning") AND "change management" AND ("success factors") AND SME} &
@@ -70,7 +71,7 @@ Tabelle~\ref{tab:lit-recherche} fasst die geplante systematische Suche mit den v
  $\sim$65 & Butarbutar \& Leyh & 68/-- & Q2/-- \\
  \addlinespace
  EBSCOhost &
- \texttt{("ERP" OR "Enterprise Resource Planning") AND ("change management" OR "Ver\"anderungsmanagement") AND ("Erfolgsfaktoren" OR "critical success factors") AND (Mittelstand OR SME OR KMU)} &
+ \texttt{("ERP" OR "Enterprise Resource Planning") AND ("change management" OR "Veränderungsmanagement") AND ("Erfolgsfaktoren" OR "critical success factors") AND (Mittelstand OR SME OR KMU)} &
  $\sim$50 & Hubbart (2023) & 55 & Q2 \\
  \addlinespace
  AISeL &
@@ -78,10 +79,11 @@ Tabelle~\ref{tab:lit-recherche} fasst die geplante systematische Suche mit den v
  $\sim$22 & Aladwani (2001) & 35 & Q2 \\
  \addlinespace
  WISO-net &
- \texttt{(ERP-Einf\"uhrung OR ERP-Implementierung) AND (Change Management OR Ver\"anderungsmanagement) AND Erfolgsfaktoren AND (Mittelstand OR KMU)} &
+ \texttt{(ERP-Einführung OR ERP-Implementierung) AND (Change Management OR Veränderungsmanagement) AND Erfolgsfaktoren AND (Mittelstand OR KMU)} &
  $\sim$30 & Idilbi (2022) & -- & -- \\
  \bottomrule
  \end{tabularx}
+ \shorthandon{"} % <- Sonderbedeutung danach wieder an
 \end{table}
 
 Die Qualitätssicherung der identifizierten Literatur erfolgt über mehrere Stufen. Berücksichtigt werden ausschlie\ss{}lich peer-reviewte Beiträge aus wissenschaftlichen Zeitschriften und Konferenzbänden sowie etablierte Fachbücher. Die Zeitschriftenqualität wird anhand des H-Index und der Einstufung im VHB-JOURQUAL-Ranking bewertet.
